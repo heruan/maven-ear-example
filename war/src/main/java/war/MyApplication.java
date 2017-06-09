@@ -1,5 +1,6 @@
 package war;
 
+import java.util.Collections;
 import java.util.Set;
 
 import javax.ws.rs.ApplicationPath;
@@ -10,8 +11,7 @@ public class MyApplication extends Application {
 
     @Override
     public Set<Class<?>> getClasses() {
-        // TODO Auto-generated method stub
-        return super.getClasses();
+        return Collections.singleton(PersonResource.class);
     }
 
 }
